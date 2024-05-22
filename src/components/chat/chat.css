@@ -1,0 +1,135 @@
+.chat {
+    flex: 2;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #2c3e50; /* Optional: Add background color for better visibility */
+}
+  
+  .userName {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    padding: 20px;
+    border-bottom: 1px solid #34495e; /* Optional: Add bottom border for separation */
+  }
+  
+  .detail {
+    padding-left: 15px; /* Add some padding to separate the text from the image */
+  }
+  
+  .detail p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .iconList {
+    margin-left: auto; /* Push the icons to the right */
+    display: flex;
+    gap: 15px; /* Add gap between icons */
+  }
+  
+  .iconList i {
+    cursor: pointer; /* Change cursor to pointer to indicate clickable icons */
+  }
+  
+  span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #a5a5a5;
+  }
+  
+  .MainBottom {
+    margin-top: auto; /* Push .MainBottom to the bottom */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative; /* Ensure the emoji picker is positioned relative to this container */
+  }
+  
+  input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    color: aliceblue; /* Ensure text color is readable */
+    &:disabled{
+      cursor: not-allowed;
+    }
+  }
+  
+  
+  .icons {
+    display: flex;
+    gap: 15px; /* Add gap between icons */
+  }
+  
+  .emoji {
+    position: relative;
+  }
+  
+  .picker {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    z-index: 1000; /* Ensure the emoji picker is above other elements */
+  }
+  
+  .sendButton {
+    background-color: #2980b9; /* Optional: Add background color */
+    border: none;
+    padding: 10px 20px;
+    color: aliceblue;
+    cursor: pointer; /* Change cursor to pointer */
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+    &:disabled{
+      background-color: #5182feb4;
+      cursor: not-allowed;
+    }
+  }
+  
+  .sendButton:hover {
+    background-color: #3498db; /* Optional: Add hover effect */
+  }
+  .center{
+    padding: 20px;
+    flex: 1;
+    overflow: scroll;
+    scrollbar-width: none; 
+    gap: 20px;
+    flex-direction: column;
+  }
+  .message{
+    display: flex;
+    max-width: 70%;
+    gap: 20px;
+}
+.messageOwn{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+    max-width: 70%;
+}
+    .texts p{
+        background-color: #3498db;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+
+ 
